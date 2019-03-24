@@ -1,4 +1,3 @@
-<script type="application/javascript" src="//gist.github.com/spf13/7896402.js"></script>
 
 # CTF_Cookbook
 A collection of tool commands and scripts for capture the flag machines
