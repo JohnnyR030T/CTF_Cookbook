@@ -61,3 +61,15 @@ A collection of tool commands and scripts for capture the flag machines
   john --wordlist=[/usr/share/wordlists/rockyou.txt] [outputfile.zip.hash]
   ```
   
+  # Base64 (base64 encode/decode data and print to standard output)
+  
+  ```bash
+  base64 -d [filetodecode.txt]
+  ```
+  # tr (translate or delete characters)
+  
+  Wipe all whitespace including newlines
+  
+  ```bash
+  cat [file.txt] | tr -d " \t\n\r"
+  ```
