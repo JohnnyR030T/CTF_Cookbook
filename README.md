@@ -25,7 +25,7 @@ A collection of tool commands and scripts for capture the flag machines
   
   scan multiple directories using a for loop
   ```bash
-  > for i in admin test dev backup loop; do
-  > gobuster -u http://10.10.10.111:9999/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster-$i.log
-  > done
+  for i in admin test dev backup loop; do
+  gobuster -u http://10.10.10.111:9999/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster-$i.log
+  done
   ```
