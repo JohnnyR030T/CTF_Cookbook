@@ -6,17 +6,17 @@ A collection of tool commands and scripts for capture the flag machines
       
   Discover common ports and their versions. Output all formats to an nmap folder
       
-  ```nmap
+  ```bash
   nmap -sC -sV -oA nmap/[filename] [box_ip_address]
   ```
   An aggressive detection scan 
       
-  ```nmap
+  ```bash
   nmap -T4 -A -oA nmap/[filename] [box_ip_address]
   ```
   Scan all ports and write results to file in all formats
   
-  ```nmap
+  ```bash
   nmap -p- -oA [filename] [box_ip_address]
   ```
 
@@ -24,7 +24,7 @@ A collection of tool commands and scripts for capture the flag machines
   
   Scan directories on port using list in file directory-list-2.3-medium.txt and output it to file gobuster.log
   
-  ```gobuster
+  ```bash
   gobuster -u http://[box_ip_address]:[port] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.log
   ```
   
