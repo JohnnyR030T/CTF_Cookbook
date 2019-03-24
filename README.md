@@ -98,3 +98,19 @@ A collection of tool commands and scripts for capture the flag machines
   ```bash
   cat [FILE.txt] | tr -d " \t\n\r"
   ```
+
+  # Upgrade the Interactive Shell to a Full TTY Shell
+  
+  ```bash
+  python -c 'import pty; pty.spawn("/bin/bash")'
+  export TERM=xterm
+  Ctrl-z
+  stty raw -echo
+  fg
+  reset
+  ```
+  
+  
+  
+  
+  
