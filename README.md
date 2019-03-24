@@ -40,12 +40,15 @@ A collection of tool commands and scripts for capture the flag machines
   
   
   # zip2john (Crack password protected zip files.)
+  
   get hash from zip file and send to an output file for cracking
-    ```bash
-    zip2john [zipfile.zip] > [outputfile.zip.hash]
-    ```
+  
+  ```bash
+  zip2john [zipfile.zip] > [outputfile.zip.hash]
+  ```
   crack zip file hash using wordlist rockyou.txt
-    ```bash
-    john --wordlist [/usr/share/wordlists/rockyou.txt] [outputfile.zip.hash]
-    ```
+  
+  ```bash
+  john --wordlist [/usr/share/wordlists/rockyou.txt] [outputfile.zip.hash]
+  ```
   
