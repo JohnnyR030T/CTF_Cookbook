@@ -1,3 +1,5 @@
+{{< figure src="/media/spf13.jpg" title="Steve Francia" >}}
+
 # CTF_Cookbook
 A collection of tool commands and scripts for capture the flag machines
 
