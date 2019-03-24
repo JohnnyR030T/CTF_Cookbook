@@ -39,6 +39,15 @@ A collection of tool commands and scripts for capture the flag machines
   gobuster -u http://[RHOST_IP]:[PORT]/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster-$i.log
   done
   ```
+  
+  # WFUZZ (a web application bruteforcer)
+
+  Enumerate on web services
+  ```bash
+  wfuzz -c -z file,/usr/share/seclists/Discovery/Web-Content/quickhits.txt --hc '403,404' http://[RHOST_IP]/FUZZ
+  ```
+  
+  
   # SMBMAP (SMB enumeration tool)
   
   check for any available samba shares on the host
