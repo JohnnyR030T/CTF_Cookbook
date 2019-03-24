@@ -29,3 +29,7 @@ A collection of tool commands and scripts for capture the flag machines
   gobuster -u http://10.10.10.111:9999/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster-$i.log
   done
   ```
+
+  # XXD (make a hexdump or do the reverse.)
+  
+  
