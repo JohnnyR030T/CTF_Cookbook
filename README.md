@@ -17,12 +17,12 @@ A collection of tool commands and scripts for capture the flag machines
   Scan all ports and write results to file in all formats
   
   ```bash
-  nmap -p- -oA [filename] [box_ip_address]
+  nmap -p- -oA [FILENAME] [RHOST_IP]
   ```
   
   Scan all ports and then search through XML file results with SearchSploit to find possible exploits
   ```bash
-  nmap -p- -sV -oX [filename.xml] [box_ip_address]; searchsploit --nmap [filename.xml]
+  nmap -p- -sV -oX [FILENAME.xml] [RHOST_IP]; searchsploit --nmap [FILENAME.xml]
   ```
 
   # Gobuster (Directory scanning tool)
@@ -30,22 +30,35 @@ A collection of tool commands and scripts for capture the flag machines
   Scan directories on port using list in file directory-list-2.3-medium.txt and output it to file gobuster.log
   
   ```bash
-  gobuster -u http://[box_ip_address]:[port] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.log
+  gobuster -u http://[RHOST_IP]:[PORT] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.log
   ```
   
   Scan multiple directories using a for loop
   ```bash
   for i in admin test dev backup loop; do
-  gobuster -u http://[box_ip_address]:[port]/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster-$i.log
+  gobuster -u http://[RHOST_IP]:[PORT]/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster-$i.log
   done
   ```
-
+  # SMBMAP (SMB enumeration tool)
+  
+  ```bash
+  smbmap -H [RHOST_IP]
+  ```
+  
+  # HYDRA ()
+  
+  scan smb share with a known user against a password list
+  
+  ```bash
+  hydra -l [USERNAME] -P [PASSWORDS.txt] smb://[RHOST_IP]
+  ```
+  
   # XXD (make a hexdump or do the reverse.)
   
   Reverse hex in a file
   
   ```bash
-  cat [hexfile.txt] | xxd -r -p > [decodedfile.txt]
+  cat [HEXFILE.txt] | xxd -r -p > [DECODED_FILE.txt]
   ```
   
   # zip2john (Crack password protected zip files.)
@@ -53,23 +66,23 @@ A collection of tool commands and scripts for capture the flag machines
   Get hash from zip file and send to an output file for cracking
   
   ```bash
-  zip2john [zipfile.zip] > [outputfile.zip.hash]
+  zip2john [ZIPFILE.zip] > [OUTPUTFILE.zip.hash]
   ```
   Crack zip file hash using wordlist rockyou.txt
   
   ```bash
-  john --wordlist=[/usr/share/wordlists/rockyou.txt] [outputfile.zip.hash]
+  john --wordlist=[/usr/share/wordlists/rockyou.txt] [OUTPUTFILE.zip.hash]
   ```
   
   # Base64 (base64 encode/decode data and print to standard output)
   
   ```bash
-  base64 -d [filetodecode.txt]
+  base64 -d [FILE_TO_DECODE.txt]
   ```
   # tr (translate or delete characters)
   
   Wipe all whitespace including newlines
   
   ```bash
-  cat [file.txt] | tr -d " \t\n\r"
+  cat [FILE.txt] | tr -d " \t\n\r"
   ```
