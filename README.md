@@ -45,7 +45,7 @@ A collection of tool commands and scripts for capture the flag machines
   smbmap -H [RHOST_IP]
   ```
   
-  # HYDRA ()
+  # HYDRA (a very fast network logon cracker which support many different services)
   
   scan smb share with a known user against a password list
   
