@@ -3,5 +3,5 @@ A collection of tool commands and scripts for capture the flag machines
 
   <h2>- Nmap</h2>
   
-      <p>Discover common ports and their versions. Output all formats to an nmap folder</p>
+      Discover common ports and their versions. Output all formats to an nmap folder
       <code>nmap -sC -sV -oA nmap/[boxname] [box_ip_address]</code>
