@@ -41,8 +41,18 @@ A collection of tool commands and scripts for capture the flag machines
   ```
   # SMBMAP (SMB enumeration tool)
   
+  check for any available samba shares on the host
+  
   ```bash
   smbmap -H [RHOST_IP]
+  ```
+  
+  # LFTP (Sophisticated file transfer program)
+  
+  Connect to ftp server as anonymous user and run a command (In this example "ls") upon login
+  
+  ```bash
+  lftp -u anonymous -e "ls" [RHOST_IP]
   ```
   
   # HYDRA (a very fast network logon cracker which support many different services)
