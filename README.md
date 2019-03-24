@@ -1,7 +1,7 @@
 <h1># CTF_Cookbook</h1>
 A collection of tool commands and scripts for capture the flag machines
 
-  - Nmap
+  ###Nmap
       
   Discover common ports and their versions. Output all formats to an nmap folder
       
@@ -14,7 +14,7 @@ A collection of tool commands and scripts for capture the flag machines
   nmap -T4 -A -oA nmap/[filename] [box_ip_address]
   ```
 
-  - Gobuster
+  ###Gobuster
   
   Scan directories on port 9999 using list in file directory-list-2.3-medium.txt and output it to file gobuster.log
   
