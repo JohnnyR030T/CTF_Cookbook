@@ -49,6 +49,6 @@ A collection of tool commands and scripts for capture the flag machines
   crack zip file hash using wordlist rockyou.txt
   
   ```bash
-  john --wordlist [/usr/share/wordlists/rockyou.txt] [outputfile.zip.hash]
+  john --wordlist=[/usr/share/wordlists/rockyou.txt] [outputfile.zip.hash]
   ```
   
