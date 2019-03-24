@@ -38,3 +38,11 @@ A collection of tool commands and scripts for capture the flag machines
   # XXD (make a hexdump or do the reverse.)
   
   
+  
+  # zip2john (Crack password protected zip files.)
+    ```bash
+    zip2john [zipfile.zip] > [outputfile.zip.hash]
+    
+    john --wordlist [/usr/share/wordlists/rockyou.txt] [outputfile.zip.hash]
+    ```
+  
