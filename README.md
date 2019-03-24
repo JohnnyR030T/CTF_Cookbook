@@ -14,19 +14,24 @@ A collection of tool commands and scripts for capture the flag machines
   ```nmap
   nmap -T4 -A -oA nmap/[filename] [box_ip_address]
   ```
+  Scan all ports and write results to file in all formats
+  
+  ```nmap
+  nmap -p- -oA [filename] [box_ip_address]
+  ```
 
   # Gobuster
   
-  Scan directories on port 9999 using list in file directory-list-2.3-medium.txt and output it to file gobuster.log
+  Scan directories on port using list in file directory-list-2.3-medium.txt and output it to file gobuster.log
   
   ```gobuster
-  gobuster -u http://10.10.10.111:9999 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.log
+  gobuster -u http://[box_ip_address]:[port] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.log
   ```
   
   scan multiple directories using a for loop
   ```bash
   for i in admin test dev backup loop; do
-  gobuster -u http://10.10.10.111:9999/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster-$i.log
+  gobuster -u http://[box_ip_address]:[port]/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o      gobuster-$i.log
   done
   ```
 
