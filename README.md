@@ -1,6 +1,5 @@
 <img src="https://www.hackthebox.eu/badge/image/22711" alt="Hack The Box">
-![JohnnyR030T](https://www.hackthebox.eu/badge/22711)
-<script src="https://www.hackthebox.eu/badge/22711"></script>
+
 # CTF_Cookbook
 A collection of tool commands and scripts for capture the flag machines
 
