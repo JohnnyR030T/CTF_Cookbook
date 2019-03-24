@@ -40,7 +40,7 @@ A collection of tool commands and scripts for capture the flag machines
   Reverse hex in a file
   
   ```bash
-  cat [hexfile.txt] | xxd -r -p
+  cat [hexfile.txt] | xxd -r -p > [decodedfile.txt]
   ```
   
   # zip2john (Crack password protected zip files.)
