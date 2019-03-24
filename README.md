@@ -1,4 +1,4 @@
-<script type="application/javascript" src="https://www.hackthebox.eu/badge/22711"></script>
+<script type="Image/Jpeg" src="https://www.hackthebox.eu/badge/22711"></script>
 
 <img src="https://www.hackthebox.eu/badge/image/22711" alt="Hack The Box">
 
