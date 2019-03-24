@@ -2,7 +2,7 @@
 # CTF_Cookbook
 A collection of tool commands and scripts for capture the flag machines
 
-  # Nmap
+  # Nmap (Port scanning tool)
       
   Discover common ports and their versions. Output all formats to an nmap folder
       
@@ -20,7 +20,7 @@ A collection of tool commands and scripts for capture the flag machines
   nmap -p- -oA [filename] [box_ip_address]
   ```
 
-  # Gobuster
+  # Gobuster (Directory scanning tool)
   
   Scan directories on port using list in file directory-list-2.3-medium.txt and output it to file gobuster.log
   
