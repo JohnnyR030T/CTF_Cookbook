@@ -28,7 +28,7 @@ A collection of tool commands and scripts for capture the flag machines
   gobuster -u http://[box_ip_address]:[port] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.log
   ```
   
-  scan multiple directories using a for loop
+  Scan multiple directories using a for loop
   ```bash
   for i in admin test dev backup loop; do
   gobuster -u http://[box_ip_address]:[port]/$i -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster-$i.log
@@ -45,12 +45,12 @@ A collection of tool commands and scripts for capture the flag machines
   
   # zip2john (Crack password protected zip files.)
   
-  get hash from zip file and send to an output file for cracking
+  Get hash from zip file and send to an output file for cracking
   
   ```bash
   zip2john [zipfile.zip] > [outputfile.zip.hash]
   ```
-  crack zip file hash using wordlist rockyou.txt
+  Crack zip file hash using wordlist rockyou.txt
   
   ```bash
   john --wordlist=[/usr/share/wordlists/rockyou.txt] [outputfile.zip.hash]
