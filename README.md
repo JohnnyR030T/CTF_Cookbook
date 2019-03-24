@@ -19,6 +19,11 @@ A collection of tool commands and scripts for capture the flag machines
   ```bash
   nmap -p- -oA [filename] [box_ip_address]
   ```
+  
+  Scan all ports and then search through XML file results with SearchSploit to find possible exploits
+  ```bash
+  nmap -p- -sV -oX [filename.xml] [box_ip_address]; searchsploit --nmap [filename.xml]
+  ```
 
   # Gobuster (Directory scanning tool)
   
