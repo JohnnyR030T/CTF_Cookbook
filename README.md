@@ -86,6 +86,8 @@ A collection of tool commands and scripts for capture the flag machines
   
   # Base64 (base64 encode/decode data and print to standard output)
   
+  Decode base64 contained in a file
+  
   ```bash
   base64 -d [FILE_TO_DECODE.txt]
   ```
