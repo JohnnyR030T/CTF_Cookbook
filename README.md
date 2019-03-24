@@ -37,7 +37,11 @@ A collection of tool commands and scripts for capture the flag machines
 
   # XXD (make a hexdump or do the reverse.)
   
+  Reverse hex in a file
   
+  ```bash
+  cat [hexfile.txt] | xxd -r -p
+  ```
   
   # zip2john (Crack password protected zip files.)
   
