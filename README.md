@@ -6,5 +6,10 @@ A collection of tool commands and scripts for capture the flag machines
   Discover common ports and their versions. Output all formats to an nmap folder
       
   ```bash
-  nmap -sC -sV -oA nmap/[boxname] [box_ip_address]
+  nmap -sC -sV -oA nmap/[filename] [box_ip_address]
+  ```
+  An aggressive detection scan 
+      
+  ```bash
+  nmap -T4 -A -oA nmap/[filename] [box_ip_address]
   ```
